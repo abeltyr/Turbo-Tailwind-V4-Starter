@@ -1,6 +1,6 @@
 # Turborepo Tailwind CSS v4 Starter
 
-This is an enhanced version of the Turborepo starter, updated to use Tailwind CSS v4 and maintained by the Turborepo core team.
+This is an enhanced version of the Turborepo starter, updated to work with the latest Tailwind CSS (v4), featuring a restructured setup and up-to-date configuration for modern development.
 
 ## Using this example
 
@@ -12,7 +12,7 @@ npx create-turbo@latest -e with-tailwind
 
 ## What's inside?
 
-This Turborepo includes the following packages/apps, all configured with Tailwind CSS v4:
+This Turborepo includes the following packages/apps, all configured for compatibility with Tailwind CSS v4:
 
 ### Apps and Packages
 
@@ -26,6 +26,9 @@ Each package/app is 100% [TypeScript](https://www.typescriptlang.org/) and lever
 
 ### Key Tailwind v4 Features
 
+- Up-to-date configuration for Tailwind CSS v4
+- Improved project structure for easier maintenance
+- Consistent workspace-level dependency management
 - Enhanced performance with the new engine
 - Improved developer experience with better error messages
 - Advanced color manipulation and gradients
@@ -36,7 +39,7 @@ Each package/app is 100% [TypeScript](https://www.typescriptlang.org/) and lever
 
 This Turborepo comes pre-configured with:
 
-- [Tailwind CSS v4](https://tailwindcss.com/) for modern, utility-first styling
+- [Tailwind CSS v4](https://tailwindcss.com/) for utility-first styling
 - [TypeScript](https://www.typescriptlang.org/) for static type checking
 - [ESLint](https://eslint.org/) for code linting
 - [Prettier](https://prettier.io) for code formatting
@@ -50,4 +53,4 @@ pnpm install
 pnpm dev
 ```
 
-Note: The `tailwindcss` and `autoprefixer` dependencies are now managed at the workspace level for better consistency across packages.
+Note: The `tailwindcss` and `autoprefixer` dependencies are managed at the workspace level for consistency across packages.
