@@ -1,10 +1,10 @@
-# Turborepo Tailwind CSS starter
+# Turborepo Tailwind CSS v4 Starter
 
-This Turborepo starter is maintained by the Turborepo core team.
+This is an enhanced version of the Turborepo starter, updated to use Tailwind CSS v4 and maintained by the Turborepo core team.
 
 ## Using this example
 
-Run the following command:
+Create a new project using this starter template:
 
 ```sh
 npx create-turbo@latest -e with-tailwind
@@ -12,47 +12,42 @@ npx create-turbo@latest -e with-tailwind
 
 ## What's inside?
 
-This Turborepo includes the following packages/apps:
+This Turborepo includes the following packages/apps, all configured with Tailwind CSS v4:
 
 ### Apps and Packages
 
-- `docs`: a [Next.js](https://nextjs.org/) app with [Tailwind CSS](https://tailwindcss.com/)
-- `web`: another [Next.js](https://nextjs.org/) app with [Tailwind CSS](https://tailwindcss.com/)
-- `ui`: a stub React component library with [Tailwind CSS](https://tailwindcss.com/) shared by both `web` and `docs` applications
+- `docs`: a [Next.js](https://nextjs.org/) app with Tailwind CSS v4
+- `web`: another [Next.js](https://nextjs.org/) app with Tailwind CSS v4
+- `ui`: a modern React component library using Tailwind CSS v4, shared between `web` and `docs` applications
 - `@repo/eslint-config`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
 - `@repo/typescript-config`: `tsconfig.json`s used throughout the monorepo
 
-Each package/app is 100% [TypeScript](https://www.typescriptlang.org/).
+Each package/app is 100% [TypeScript](https://www.typescriptlang.org/) and leverages the latest Tailwind CSS v4 features.
 
-### Building packages/ui
+### Key Tailwind v4 Features
 
-This example is set up to produce compiled styles for `ui` components into the `dist` directory. The component `.tsx` files are consumed by the Next.js apps directly using `transpilePackages` in `next.config.ts`. This was chosen for several reasons:
-
-- Make sharing one `tailwind.config.ts` to apps and packages as easy as possible.
-- Make package compilation simple by only depending on the Next.js Compiler and `tailwindcss`.
-- Ensure Tailwind classes do not overwrite each other. The `ui` package uses a `ui-` prefix for it's classes.
-- Maintain clear package export boundaries.
-
-Another option is to consume `packages/ui` directly from source without building. If using this option, you will need to update the `tailwind.config.ts` in your apps to be aware of your package locations, so it can find all usages of the `tailwindcss` class names for CSS compilation.
-
-For example, in [tailwind.config.ts](packages/tailwind-config/tailwind.config.ts):
-
-```js
-  content: [
-    // app content
-    `src/**/*.{js,ts,jsx,tsx}`,
-    // include packages if not transpiling
-    "../../packages/ui/*.{js,ts,jsx,tsx}",
-  ],
-```
-
-If you choose this strategy, you can remove the `tailwindcss` and `autoprefixer` dependencies from the `ui` package.
+- Enhanced performance with the new engine
+- Improved developer experience with better error messages
+- Advanced color manipulation and gradients
+- New modern preset defaults
+- Simplified configuration system
 
 ### Utilities
 
-This Turborepo has some additional tools already setup for you:
+This Turborepo comes pre-configured with:
 
-- [Tailwind CSS](https://tailwindcss.com/) for styles
+- [Tailwind CSS v4](https://tailwindcss.com/) for modern, utility-first styling
 - [TypeScript](https://www.typescriptlang.org/) for static type checking
 - [ESLint](https://eslint.org/) for code linting
 - [Prettier](https://prettier.io) for code formatting
+
+### Getting Started
+
+After creating your project, install dependencies and start the development server:
+
+```sh
+pnpm install
+pnpm dev
+```
+
+Note: The `tailwindcss` and `autoprefixer` dependencies are now managed at the workspace level for better consistency across packages.
