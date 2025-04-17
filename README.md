@@ -2,21 +2,12 @@
 
 This is an enhanced version of the Turborepo starter, updated to work with the latest Tailwind CSS (v4), featuring a restructured setup and up-to-date configuration for modern development.
 
-## Using this example
-
-Create a new project using this starter template:
-
-```sh
-npx create-turbo@latest -e with-tailwind
-```
-
 ## What's inside?
 
 This Turborepo includes the following packages/apps, all configured for compatibility with Tailwind CSS v4:
 
 ### Apps and Packages
 
-- `docs`: a [Next.js](https://nextjs.org/) app with Tailwind CSS v4
 - `web`: another [Next.js](https://nextjs.org/) app with Tailwind CSS v4
 - `ui`: a modern React component library using Tailwind CSS v4, shared between `web` and `docs` applications
 - `@repo/eslint-config`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
@@ -52,5 +43,3 @@ After creating your project, install dependencies and start the development serv
 pnpm install
 pnpm dev
 ```
-
-Note: The `tailwindcss` and `autoprefixer` dependencies are managed at the workspace level for consistency across packages.
